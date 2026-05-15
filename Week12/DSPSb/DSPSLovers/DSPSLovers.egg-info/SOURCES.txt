@@ -1,0 +1,11 @@
+README.md
+license.txt
+setup.py
+DSPSLovers.egg-info/PKG-INFO
+DSPSLovers.egg-info/SOURCES.txt
+DSPSLovers.egg-info/dependency_links.txt
+DSPSLovers.egg-info/requires.txt
+DSPSLovers.egg-info/top_level.txt
+mypackage/TrueLove.py
+mypackage/__init__.py
+mypackage/simpleFunctions.py

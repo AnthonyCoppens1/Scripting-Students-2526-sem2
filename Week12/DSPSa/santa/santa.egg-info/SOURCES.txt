@@ -1,0 +1,11 @@
+README.md
+license.txt
+setup.py
+MissSanta/ChristmasLove.py
+MissSanta/LilElfCalculations.py
+MissSanta/__init__.py
+santa.egg-info/PKG-INFO
+santa.egg-info/SOURCES.txt
+santa.egg-info/dependency_links.txt
+santa.egg-info/requires.txt
+santa.egg-info/top_level.txt

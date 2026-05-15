@@ -1,0 +1,285 @@
+[
+    {
+        "id": "c7616945e7833102",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4772e2be8bf56079",
+        "type": "inject",
+        "z": "c7616945e7833102",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "85c80f1e09fb7f09"
+            ]
+        ]
+    },
+    {
+        "id": "96a82a983d9298c3",
+        "type": "debug",
+        "z": "c7616945e7833102",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "85c80f1e09fb7f09",
+        "type": "function",
+        "z": "c7616945e7833102",
+        "name": "function 1",
+        "func": "msg.payload = \"Hello World;\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "96a82a983d9298c3"
+            ]
+        ]
+    },
+    {
+        "id": "826d894615ed13ac",
+        "type": "inject",
+        "z": "c7616945e7833102",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "e4addd51ca401fd2"
+            ]
+        ]
+    },
+    {
+        "id": "e4addd51ca401fd2",
+        "type": "exec",
+        "z": "c7616945e7833102",
+        "command": "py \"C:\\Users\\antho\\OneDrive\\Documenten\\Anthony-TM\\Scripting\\Scripting-Students-2526-sem2\\Week12\\DSPSb\\hello.py\"",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Python script",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "864e57a9ece8b0de"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "864e57a9ece8b0de",
+        "type": "debug",
+        "z": "c7616945e7833102",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ad4010f320831fd3",
+        "type": "ui_button",
+        "z": "c7616945e7833102",
+        "name": "",
+        "group": "285b02fc7b8f236b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "fc5d8a77f0c7932f"
+            ]
+        ]
+    },
+    {
+        "id": "fc5d8a77f0c7932f",
+        "type": "exec",
+        "z": "c7616945e7833102",
+        "command": "py \"C:\\Users\\antho\\OneDrive\\Documenten\\Anthony-TM\\Scripting\\Scripting-Students-2526-sem2\\Week12\\DSPSb\\hello.py\"",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Python script",
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "120e0a758bca42db"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "120e0a758bca42db",
+        "type": "ui_text",
+        "z": "c7616945e7833102",
+        "group": "285b02fc7b8f236b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f5cddcf34a21c814",
+        "type": "ui_form",
+        "z": "c7616945e7833102",
+        "name": "",
+        "label": "",
+        "group": "285b02fc7b8f236b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "",
+                "value": "Name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "",
+                "value": "Age",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Name": "",
+            "Age": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "fc5d8a77f0c7932f"
+            ]
+        ]
+    },
+    {
+        "id": "285b02fc7b8f236b",
+        "type": "ui_group",
+        "name": "Home",
+        "tab": "82aae6b241882c5f",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "82aae6b241882c5f",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "09658026cacfa72a",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]

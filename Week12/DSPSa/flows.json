@@ -1,0 +1,24 @@
+[
+    {
+        "id": "977963916671d5f9",
+        "type": "exec",
+        "z": "49bf8ff8b083d467",
+        "command": "py \"C:\\Users\\antho\\OneDrive\\Documenten\\Anthony-TM\\Scripting\\Scripting-Students-2526-sem2\\Week12\\DSPSa\\helloKitty.py\"",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "python script HelloKitty",
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "a5879e4738e0fb1f"
+            ],
+            [],
+            []
+        ]
+    }
+]
